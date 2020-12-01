@@ -288,7 +288,7 @@ void activeCheatMode()
        *      m.nombre_de_coups[i]=99;
        */
 
-      if (i < m.nombre_de_dyna)
+      if ((i < m.nombre_de_dyna) && (isAIActiveForPlayer(i) == false))
       {
          m.j1[i * 5] = 1;            //nb of bombs
          //m.j1[1+i*5]=5; // power of bombs
